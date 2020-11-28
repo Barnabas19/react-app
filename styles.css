@@ -1,0 +1,148 @@
+/* BORDER-BOX DECLARATION */
+html,
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MOBILE FIRST */
+/* navbar component */
+.nav {
+  width: 100%;
+}
+
+.nav .list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 30px;
+}
+
+.nav .list.list--modifier {
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(#c90626));
+  background: linear-gradient(purple, #c90626);
+  color: white;
+}
+
+.nav .list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+/* destination component */
+.destination {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.destination.destination--modifier {
+  background-color: white;
+}
+
+.destination__heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.destination__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.destination__list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 44%;
+          flex: 0 0 44%;
+  margin-left: 4%;
+  border: 2px solid #3d3d3d;
+  text-align: left;
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  margin-top: 15px;
+  font-weight: 900;
+  opacity: 0.5;
+}
+
+.destination__list__item:last-child {
+  margin: auto;
+  margin-top: 15px;
+}
+
+/* deals component */
+.deals {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+.deals.deals--modifier {
+  background-color: #81a69b;
+  /*background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-background.png);*/
+  background-image: url(./image.png);
+}
+
+.deals__deal {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 44%;
+          flex: 0 0 44%;
+  margin-left: 4%;
+}
+
+.deals__deal__heading {
+  text-align: center;
+  color: purple;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.deals__deal__paragraph {
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+  opacity: 0.7;
+}
+
+.deals__deal:last-child {
+  margin: auto;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
